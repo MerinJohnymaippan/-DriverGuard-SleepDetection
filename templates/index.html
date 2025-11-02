@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriverGuard - Real-Time Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🚗 DRIVERGUARD</h1>
+        <h2>Real-Time Driver Drowsiness & Phone Detection</h2>
+    </header>
+
+    <div class="container">
+        <div class="camera-feed">
+            <img id="video-feed" src="{{ url_for('video_feed') }}" />
+            <div id="status" class="status">Loading...</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+flask
+opencv-python
+pygame
+dlib
+numpy
+scipy
+ultralytics
